@@ -1,16 +1,31 @@
 
 /* RESET */
 
-@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+
+
+
+/* FORGED BASE FONT */
+
+@font-face {
+    font-family: 'ForgedBase';
+    src: url('./fonts/forged-base-demo.regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* HERO HEADING */
 
 .brush-font {
-    font-family: 'Permanent Marker', cursive;
-    font-size: 90px;
+    font-family: 'ForgedBase', sans-serif;
+    font-size: clamp(55px, 9vw, 100px);
     font-weight: normal;
-    letter-spacing: 3px;
-    line-height: 1.1;
+    letter-spacing: 5px;
+    line-height: 1;
     color: white;
 }
+
 
 * {
     margin: 0;
@@ -23,7 +38,7 @@ html {
 }
 
 body {
-    background: #973948;
+    background: #ac8989;
     color: white;
     font-family: Arial, sans-serif;
 }
@@ -36,11 +51,11 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: #973948;
+    background: #e7dada;
 }
 
 .logo {
-    color: #c5a46d;
+    color: #000000;
     font-size: 22px;
     font-weight: bold;
     letter-spacing: 2px;
@@ -48,7 +63,7 @@ body {
 }
 
 nav a {
-    color: white;
+    color: rgb(0, 0, 0);
     text-decoration: none;
     margin-left: 25px;
     transition: 0.3s;
@@ -84,22 +99,16 @@ nav a:hover {
 
 .subtitle {
     color: #f2788b;
-    letter-spacing: 4px;
+    letter-spacing: 7px;
     font-size: 13px;
 }
 
 .section-label {
-    color: white;
+    color: #181818;
     letter-spacing: 4px;
     font-size: 13px;
 }
 
-.hero h1 {
-    font-size: clamp(55px, 9vw, 100px);
-    line-height: 1;
-    margin: 30px 0;
-    letter-spacing: 5px;
-}
 
 .hero h2 {
     font-size: 24px;
@@ -140,7 +149,7 @@ nav a:hover {
 .experience {
     padding: 100px 8%;
     text-align: center;
-    background: #181818;
+    background: #e7dada;
 }
 
 .stats {
@@ -152,8 +161,8 @@ nav a:hover {
 
 .stat-card {
     padding: 40px 20px;
-    border: 1px solid #f2788b;
-    background: #973948;
+    border: 1px solid #e7dada;
+    background: #ac8989;
 }
 
 .stat-card h3 {
@@ -163,7 +172,7 @@ nav a:hover {
 
 .stat-card p {
     margin-top: 15px;
-    color: #cccccc;
+    color: #181818;
 }
 
 /* CONTACT */
@@ -183,8 +192,8 @@ nav a:hover {
 footer {
     text-align: center;
     padding: 25px;
-    background: #080808;
-    color: #888888;
+    background: #e7dada;
+    color: rgb(0, 0, 0);
 }
 
 /* MOBILE RESPONSIVE */
@@ -364,7 +373,7 @@ footer {
 
 .filmography {
     padding: 100px 8%;
-    background: #101010;
+    background: #e7dada;
 }
 
 .film-heading {
@@ -379,7 +388,7 @@ footer {
 }
 
 .film-intro {
-    color: white;
+    color: #181818;
 }
 
 .film-category {
@@ -390,7 +399,7 @@ footer {
     font-size: 25px;
     color: #c5a46d;
     margin-bottom: 30px;
-    border-bottom: 1px solid #973948;
+    border-bottom: 1px solid #5c4343;
     padding-bottom: 15px;
 }
 
@@ -434,7 +443,7 @@ footer {
 
 
 .film-card h4 {
-    color: white;
+    color: #181818;
     margin-top: 18px;
     font-size: 19px;
 }
@@ -472,4 +481,73 @@ footer {
     }
 
 }
+
+
+/* LIGHTNING TEXT HOVER EFFECT */
+
+.lightning-text {
+    display: inline-block;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* Lightning glow on hover */
+
+.lightning-text:hover {
+    color: #ffffff;
+
+    text-shadow:
+        0 0 5px #ffffff,
+        0 0 10px #ffb6c8,
+        0 0 20px #ff7898,
+        0 0 35px #ff416d,
+        0 0 55px #eedce0;
+
+    animation: lightning 1.2s infinite;
+}
+
+/* Electric flickering animation */
+
+@keyframes lightning {
+    0%, 100% {
+        opacity: 1;
+        text-shadow:
+            0 0 5px #ffffff,
+            0 0 15px #ff7898,
+            0 0 30px #ff416d;
+    }
+
+    20% {
+        opacity: 0.8;
+    }
+
+    25% {
+        opacity: 1;
+        text-shadow:
+            0 0 10px #ffffff,
+            0 0 25px #ff1744,
+            0 0 45px #ff1744;
+    }
+
+    50% {
+        opacity: 0.9;
+    }
+
+    75% {
+        opacity: 1;
+    }
+}
+
+
+.link {
+    color: #cccccc;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
+
+
 
