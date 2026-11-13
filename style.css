@@ -23,7 +23,7 @@ html {
 }
 
 body {
-    background: #101010;
+    background: #973948;
     color: white;
     font-family: Arial, sans-serif;
 }
@@ -36,11 +36,11 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: #151515;
+    background: #973948;
 }
 
 .logo {
-    color: #c5a46d;
+    color: white;
     font-size: 22px;
     font-weight: bold;
     letter-spacing: 2px;
@@ -82,9 +82,14 @@ nav a:hover {
     max-width: 850px;
 }
 
-.subtitle,
+.subtitle {
+    color: #f2788b;
+    letter-spacing: 4px;
+    font-size: 13px;
+}
+
 .section-label {
-    color: #c5a46d;
+    color: white;
     letter-spacing: 4px;
     font-size: 13px;
 }
@@ -147,8 +152,8 @@ nav a:hover {
 
 .stat-card {
     padding: 40px 20px;
-    border: 1px solid #49402e;
-    background: #202020;
+    border: 1px solid #f2788b;
+    background: #973948;
 }
 
 .stat-card h3 {
@@ -374,7 +379,7 @@ footer {
 }
 
 .film-intro {
-    color: #aaa;
+    color: white;
 }
 
 .film-category {
@@ -385,7 +390,7 @@ footer {
     font-size: 25px;
     color: #c5a46d;
     margin-bottom: 30px;
-    border-bottom: 1px solid #443a29;
+    border-bottom: 1px solid #973948;
     padding-bottom: 15px;
 }
 
